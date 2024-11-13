@@ -96,6 +96,39 @@ def func_7(*args, sort_descending = False):
     x.sort(reverse=sort_descending)
     return x
 
+def func_8():
+    '''Just a function'''
+    print('=' * 60)
+
+    def create_list():
+        '''Sub function made to create list'''
+        length = r.randint(1, 50)    # Length of the list
+        i = 0
+        xs = []
+        while i < length:
+            xs.append(r.randint(1, 20))
+            i += 1
+        return xs
+
+    x = create_list()
+    while len(x) % 2 == 0:
+        x = create_list()
+    mid = len(x) // 2
+    mid = x[mid]
+    i = x.count(mid)
+    return i
+
+def func_9(*args, size = 15):
+    '''Just a function'''
+    print('=' * 60)
+    x = []
+    for i in args:
+        x += i
+        print(x)
+    while len(x) > size:
+        args[0].pop()
+
+
 if __name__ == '__main__':
     this = [20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30]
     that = [1, 2, 3, 4, 5, 6, 7, 8, 9 ,10]
@@ -108,3 +141,5 @@ if __name__ == '__main__':
     print(func_5(that, 7, True, True, [2, 22]))
     print(func_6(those, 6))
     print(func_7(that, those, sort_descending=False))
+    print(func_8())
+    print(func_9(this, that, size= 15))
