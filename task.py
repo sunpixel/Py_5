@@ -218,3 +218,16 @@ def func_17(*args, key):
     for i in x:
         y += i
     return y.count(key), y
+
+def func_18(args, element):
+    '''Just a function'''
+    print('=' * 60)
+    xy = list()
+    for x in args:
+        print(x)
+        for y in args[x]:
+            print(y)
+            for k in args[x][y]:
+                if k == element:
+                    xy.append(args[x][y].get(element, None))
+    return xy
