@@ -124,10 +124,14 @@ def func_9(*args, size = 15):
     x = []
     for i in args:
         x += i
-        print(x)
     while len(x) > size:
-        args[0].pop()
+        x.pop()
+    x.sort()
+    return x
 
+def func_10():
+    '''Just a function'''
+    print('=' * 60)
 
 if __name__ == '__main__':
     this = [20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30]
