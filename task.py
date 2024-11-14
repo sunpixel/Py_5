@@ -129,33 +129,35 @@ def func_9(*args, size = 15):
     x.sort()
     return x
 # Needs to be done ASAP
-def func_10():
+def func_10(args):
     '''Just a function'''
     print('=' * 60)
-    def funct_1():
+    def funct_1(a):
         '''Just a function'''
-        print('=' * 60)
-    def funct_2():
+        print(sorted(list(map(lambda x: x % 2, a)), reverse = True))
+        print(a)
+        print('*' * 60)
+    def funct_2(a):
         '''Just a function'''
-        print('=' * 60)
-    def funct_3():
+        
+        print('*' * 60)
+    def funct_3(a):
         '''Just a function'''
-        print('=' * 60)
-    def funct_4():
+        print('*' * 60)
+    def funct_4(a):
         '''Just a function'''
-        print('=' * 60)
-    def funct_5():
+        print('*' * 60)
+    def funct_5(a):
         '''Just a function'''
-        print('=' * 60)
-    def funct_6():
+        print('*' * 60)
+    def funct_6(a):
         '''Just a function'''
-        print('=' * 60)
-    funct_1()
-    funct_2()
-    funct_3()
-    funct_4()
-    funct_5()
-    funct_6()
+    funct_1(args)
+    funct_2(args)
+    funct_3(args)
+    funct_4(args)
+    funct_5(args)
+    funct_6(args)
 
 def func_11(args):
     '''Just a function'''
