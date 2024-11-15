@@ -1,5 +1,7 @@
 '''Sub file made to contain code'''
 
+# pylint:disable=W0108
+
 import random as r
 
 def func_1(args):
@@ -145,7 +147,8 @@ def func_10(args):
         print('*' * 60)
     def funct_3(a):
         '''Just a function'''
-        x = sorted(list(map(int, list(map(lambda y: y[2:], list(map(lambda x: bin(x), a)))))), reverse=True)
+        x = sorted(list(map(int, list(map(lambda y: y[2:],
+            list(map(lambda x: bin(x), a)))))), reverse=True)
         print(x)
         print('*' * 60)
     def funct_4(a):
