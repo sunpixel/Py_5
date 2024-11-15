@@ -139,25 +139,36 @@ def func_10(args):
         print('*' * 60)
     def funct_2(a):
         '''Just a function'''
-        
+        y = list(filter(lambda z: z % 2 == 0, list(map(lambda x: x * x, a))))
+        print(a)
+        print(y)
         print('*' * 60)
     def funct_3(a):
         '''Just a function'''
+        x = sorted(list(map(int, list(map(lambda y: y[2:], list(map(lambda x: bin(x), a)))))), reverse=True)
+        print(x)
         print('*' * 60)
     def funct_4(a):
         '''Just a function'''
+        x = sorted(a, key=lambda x: (x ** 2) // 2)
+        print(x)
         print('*' * 60)
     def funct_5(a):
         '''Just a function'''
+        x = list(filter(lambda x: x > 0, a))
+        print(x)
         print('*' * 60)
     def funct_6(a):
         '''Just a function'''
+        x = list(filter(lambda x: x < 0, a))
+        print(x)
     funct_1(args)
     funct_2(args)
     funct_3(args)
-    funct_4(args)
-    funct_5(args)
-    funct_6(args)
+    funct_4([123, 34, 1, 6, 76, 0, 23, 4, 3, 12, 3])
+    funct_5([-1, 2, -10, -2, 12, 13, -4, 6])
+    funct_6([-1, 2, -10, -2, 12, 13, -4, 6])
+    return 'Function block finished execution'
 
 def func_11(args):
     '''Just a function'''
